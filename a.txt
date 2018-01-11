@@ -1,4 +1,4 @@
-it is good
+Git is good
 Github is awsome
 
 
