@@ -1,0 +1,35 @@
+mkdir test
+cd test
+git init
+echo Git is good > a.txt
+git add a.txt
+git status
+git commit
+
+mkdir subtest
+cd subtest
+echo this b > b.txt
+cd ..
+echo a1 > a1.txt
+echo a2 > a2.txt
+git add a1.txt
+git add a2.txt
+git add subtest/b.txt
+git commit
+
+git remote add origin https://github.com/PrinceNathaniel/test.git
+git remote -v
+vi a.txt
+git add a.txt
+git diff --staged
+git commit
+git pull origin master
+git push origin master
+
+vi a.txt
+git add a.txt
+git reset
+git add a.txt
+git commit
+git log --oneline
+git revert HEAD~2
